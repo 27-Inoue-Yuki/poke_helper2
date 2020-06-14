@@ -12,7 +12,14 @@
             <p class="text-left">Eメールアドレスを入力してね<p>
             <%= f.text_field :email, class: 'form-control' %>
           </div>
-
+          <div class="form-group">
+            <p class="text-left">passwordを入力してね<p>
+            <%= f.password_field :password, class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <p class="text-left">passwordをもう一度、入力してね<p>
+            <%= f.password_field :password_confirmation, class: 'form-control' %>
+          </div>
           <%= f.submit "登録", class: 'btn-block btn-gray' %>
         <% end %>
         <%= link_to 'ログインはこちら', '#',class: 'text-gray' %>
