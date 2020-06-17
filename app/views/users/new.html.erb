@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-offset-4 col-md-4 users-new-container">
-        <h1 class="text-center text-gray">Sign up</h1>
+        <h1 class="text-center text-gray">アカウント新規登録</h1>
         <%= form_for @user do |f| %>
           <div class="form-group">
             <p class="text-left">名前を入力してね<p>
@@ -22,7 +22,7 @@
           </div>
           <%= f.submit "登録", class: 'btn-block btn-gray' %>
         <% end %>
-        <%= link_to 'ログインはこちら', '#',class: 'text-gray' %>
+        <%= link_to 'ログインはこちら', login_path,class: 'text-gray' %>
       </div>
     </div>
   </div>
